@@ -16,10 +16,10 @@ public:
 	ATrapActor();
 
 protected:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Trap")
 	UStaticMeshComponent* TrapMesh;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Trap")
 	class UBoxComponent* CollisionBox;
 
 	UFUNCTION()
