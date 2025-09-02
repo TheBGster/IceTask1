@@ -23,19 +23,6 @@ ATrapActor::ATrapActor()
 	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &ATrapActor::OnOverlapBegin);
 }
 
-// Called when the game starts or when spawned
-void ATrapActor::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void ATrapActor::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
 
 void ATrapActor::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
